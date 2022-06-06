@@ -36,8 +36,7 @@ X = X[selected_features.copy()]
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
 # Create an ensemble of 3 models
-estimators = []
-estimators.append(('logistic', LogisticRegression()))
+estimators = [('logistic', LogisticRegression())]
 estimators.append(('cart', DecisionTreeClassifier()))
 estimators.append(('svm', SVC()))
 
