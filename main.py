@@ -58,5 +58,4 @@ async def service_health():
 @app.post('/predict', response_model=Output)
 async def model_predict(input: Input):
     """Predict with input"""
-    response = get_model_response(input)
-    return response
+    return get_model_response(input)
